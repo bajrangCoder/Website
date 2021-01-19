@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+
+<body>
+        <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Shade&family=Faster+One&family=Vast+Shadow&display=swap');
+            /* Better box-sizing */
+* { box-sizing: border-box; }
+
+/* 1rem = 10px */
+html { font-size: 62.5%; }
+
+/* Default body */
+body { 
+  margin: 0; 
+  opacity: 0;
+  font: 1.6rem/1.875 'Avenir Next', sans-serif;
+  background: #EAECF8;
+}
+
+/* Loaded body */
+body.loaded {
+  opacity: 1;
+  transition: 1s opacity;
+}
+
+/* Default banner */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 40rem;
+  padding: 0 5%;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+
+/* Default image container */
+.banner .background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transform: translate3d(0,0,0) scale(1.25);
+  background: black url(image/b2.jpg) no-repeat center center; 
+  background-size: cover;
+}
+
+/* Loaded image container */
+.loaded .banner .background {
+  transform: scale(1);
+  transition: 6.5s transform;
+}
+
+/* Other stuff */
+.banner h1 {
+  color: #EEE;
+  margin: 0;
+  line-height: 40rem;
+  text-transform: uppercase;
+  text-shadow: 0 0 .3rem black;
+}
+
+main { 
+  width: 90%;
+  margin: 5rem auto;
+}
+
+main p { margin: 0 0 3rem 0; }
+/*views counter*/
+#count{
+        color: #9FA2A2;
+        margin: 0;
+        font-size: 5px;
+}
+#view{
+        color: #9FA2A2;
+        margin: 0;
+        font-size: 5px;
+}
+#a{
+        border: 2px solid black;
+        display: inline-block;
+        width: 35px;
+        justify-content: center;
+        align-items: center;
+}
+/*download btn*/
+.click{
+  /*position: fixed;*/
+  background: #2981bc;
+  color: white;
+  font-size: 22px;
+  font-family: arial;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+  border: 1px solid #0059b3;
+  text-decoration: none;
+}
+.popup_box{
+  width: 400px;
+  height: 150px;
+  background: #f2f2f2;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  border: 1px solid #b3b3b3;
+  box-shadow: 0px 5px 10px rgba(0,0,0,.2);
+  display: none;
+}
+#btn1{
+        background: #ff5235;
+        padding: 10px 15px;
+        color: #fff;
+        position: absolute;
+        border: 1px solid #0059b3;
+        display: none;
+        text-decoration: none;
+        font-size: 22px;
+        font-family: arial;
+        font-weight: bold;
+}
+.btn3{
+        background: #4bd6ac;
+        padding: 10px 15px;
+        color: #fff;
+        position: absolute;
+        border: 1px solid #0059b3;
+        font-size: 22px;
+        font-family: arial;
+        font-weight: bold;
+}
+label{
+        font-weight: bold;
+        font-size: 22px;
+        color: #0059b3;
+}
+#que{
+        width: 60px;
+        border: 2px solid #0059b3;
+        outline: none;
+        color: red;
+}
+.li1{
+        font-family: 'Secular One', sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+}
+.li2{
+        font-family: 'Secular One', sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+}
+    </style>
+</head>
+
+<body>
+        <!-- Header -->
+<header class="banner">
+  <span class="background"></span>
+  <h1>Add Game</h1>
+</header>
+
+<!-- Other stuff -->
+<main>
+        <div id="a">
+        <h1 id="count">0 </h1>
+        <p id="view">Views</p>
+        </div>
+  <article>
+    <h1 style="font-family: 'Bungee Inline', cursive;font-size: 23px;color: #A20000;">How to make a simple add game using html, css , javascript? </h1>
+    
+    <p class="li1">Hello readers, Today in this page you'll see how to make add game? Earlier I have share <a href="Blog1.html" style="color: #31F975;text-decoration:  none;font-family: 'Secular One', sans-serif;">How to download qbasic on android?</font> </a>and now it's time to making a simple add game.</p>
+    
+    <p>
+            <h3 style="font-family: 'Bungee Inline', cursive;font-size: 16px;color: #A20000;"><i class="fa fa-angle-double-right"></i>   Requirements for making this project :-</h3>
+            <ul>
+                    <li class="li2">We need and code editor (VS, atom, subline, spck).</li>
+                    <li class="li2">A browser for preview of the project.</li>
+                    <li class="li2">Some knowledge of html, css, javascript. </li>
+            </ul>
+    </p>
+    
+    <p>
+            <h3 style="font-family: 'Bungee Inline', cursive;font-size: 16px;color: #A20000; "><i class="fa fa-angle-double-right"></i>  Features:-</h3>
+            <ul>
+            <li class="li2">Unlimited changes of number. </li>
+            <li class="li2">Giving the correct answer. </li>
+            <li class="li2">Changing the number. </li>
+            <li class="li2">Checking the answer. </li>
+            </ul>
+    </p>
+    
+    <p>
+         <h1 style="font-family: 'Bungee Inline', cursive;font-size: 18px;color: #A20000;"><i class="fa fa-angle-double-right"></i> STEPS FOR DOWNLOADING PROJECT: -  </h1>
+         <ul>
+                 <li class="li1">In this page go to the end you find a blue button.</li>
+                 <li class="li1">Click the button for Get Source code.</li>
+                 <li class="li1">When you click the button it ask a question. </li>
+                 <li class="li1">Give correct answer</li>
+                 <li class="li1">Then the download button appear </li>
+                 <li class="li1">Click for download</li>
+                 <li class="li1">Then zip folder is downloaded in your device.</li>
+                 <li class="li1">Thanks for Downloading!</li>
+                 <li class="li1">Enjoy it.</li>
+         </ul>
+         
+    </p>
+    
+    <section>
+            <button class="click" onclick="popup()">Get Code</button>
+            <div class="popup_box" id="popup_box">
+                    <label>Q. 1 meter =</label>
+                    <input type="text" id="que" />
+                    <label for="centimeter">centimeter.</label><br />
+                    <button onclick="check()" class="btn3">Check</button>
+                    <a id="btn1" href="onlinechatting.zip" download>Download</a>
+            </div>
+    </section>
+    
+    <p>
+             <h1 style="font-family: 'Bungee Inline', cursive;font-size: 16px;color: #A20000;"><i class="fa fa-angle-double-right"></i> PREVIEW OF PROJECT: -  </h1>
+             <iframe src="https://nkray-raunak123.github.io/Add-game/" height="500"></iframe>
+    </p>
+  
+    <p>
+            <h1 style="font-family: 'Bungee Inline', cursive;font-size: 18px;color: #A20000; "><i class="fa fa-angle-double-right"></i> You Must like this:</h1>
+            <ul type="square">
+                    <li><a href="https://github.com/nkray-raunak123/Digital-clock/" style="color: #31F975;text-decoration: none;font-weight: bold;">Digital Clock using html, css, javascript</a></li>
+                    <li><a href="Blog1.html" style="color:  #31F975;text-decoration: none;font-weight: bold;">QBASIC in android</a></li>
+            </ul>
+    </p>
+    <br />
+    <br />
+    <center>
+    <h1 style="font-family: 'Bungee Shade', cursive;font-size: 23px;">Thanks for visiting,</h1>
+       <h1 style="font-family: 'Bungee Shade', cursive;font-size: 23px;"> Keep visiting.
+    </h1>
+    <p>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0" nonce="KqV2FM4k"></script>
+  <div class="fb-comments" data-href="https://soultech.ml/Blog/Blog2.html" data-width="" data-numposts=""></div>
+    </p>
+    </center>
+  </article>
+</main>
+<script type="text/javascript" charset="utf-8">
+        // Trigger class name on load
+        window.onload = function() {
+        document.body.className += ' loaded'
+        };
+        //Views counter 
+        const countEl = document.getElementById('count');
+
+                updateVisitCount();
+                
+                function updateVisitCount() {
+                       fetch('https://api.countapi.xyz/update/blog2/railgun2/?amount=1')
+                                .then(res => res.json())
+                                .then(res => {
+                                        countEl.innerHTML = res.value;
+                                })
+                }
+        //DOWNLOAD  Code
+        function check(){
+                var ans = document.getElementById('que').value;
+                
+                if(ans=="100"){
+                        document.getElementById("btn1").style.display="block";
+                        alert("Awesome! Correct answer. Download button is now enabled.....");
+                }else{
+                        document.getElementById("btn1").style.display="none";
+                        alert("Incorrect answer. Sorry you can't get download button.ERROR...");
+                }
+        }
+        //show popup_box
+        function popup(){
+                document.getElementById("popup_box").style.display="block";
+        }
+</script>
+</body>
+
+</html>
+</body>
+
+</html>
