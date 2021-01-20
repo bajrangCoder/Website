@@ -233,13 +233,13 @@ label{
                     <input type="text" id="que" />
                     <label for="centimeter">centimeter.</label><br />
                     <button onclick="check()" class="btn3">Check</button>
-                    <a id="btn1" href="Zip/Add-game.zip" download="Zip/Add-game.zip">Download</a>
+                    <a id="btn1">Download</a>
             </div>
     </section>
     
     <p>
              <h1 style="font-family: 'Bungee Inline', cursive;font-size: 16px;color: #A20000;"><i class="fa fa-angle-double-right"></i> PREVIEW OF PROJECT: -  </h1>
-             <iframe src="https://nkray-raunak123.github.io/Add-game/" height="500"></iframe>
+             <iframe src="https://nkray-raunak123.github.io/Add-game/" height="500" width="100%"></iframe>
     </p>
   
     <p>
@@ -280,7 +280,7 @@ label{
                                         countEl.innerHTML = res.value;
                                 })
                 }
-        //DOWNLOAD  Code
+        //DOWNLOAD  Code Question 
         function check(){
                 var ans = document.getElementById('que').value;
                 
@@ -296,6 +296,13 @@ label{
         function popup(){
                 document.getElementById("popup_box").style.display="block";
         }
+        //Download Code 
+        $(document).ready(function(){
+                        $('#btn1').click(function(e){
+                                e.preventDefault();
+                                window.location.href = "Zip/Add game.zip";
+                        });
+                });
 </script>
 </body>
 
