@@ -229,9 +229,8 @@ label{
     <section>
             <button class="click" onclick="popup()">Get Code</button>
             <div class="popup_box" id="popup_box">
-                    <label>Q. 1 meter =</label>
-                    <input type="text" id="que" />
-                    <label for="centimeter">centimeter.</label><br />
+                    <label>Q. CSS was introduced in which year?</label>
+                    <input type="text" id="que" /><br />
                     <button onclick="check()" class="btn3">Check</button>
                     <a id="btn1">Download</a>
             </div>
@@ -284,7 +283,7 @@ label{
         function check(){
                 var ans = document.getElementById('que').value;
                 
-                if(ans=="100"){
+                if(ans=="1996"){
                         document.getElementById("btn1").style.display="block";
                         alert("Awesome! Correct answer. Download button is now enabled.....");
                 }else{
